@@ -2,6 +2,7 @@ package com.example.cargarimagen.ui.screens
 
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -139,6 +140,7 @@ fun PrincipalImg(predictViewModel: PredictViewModel = viewModel()) {
 
         errorMessage?.let {
             Toast.makeText(LocalContext.current, "Error: $it", Toast.LENGTH_SHORT).show()
+            Log.e("Error Toast:", it)
         }
     }
 }
