@@ -17,7 +17,7 @@ interface APIService {
     ): Call<PredictResponse>
 
     companion object Factory {
-        private const val BASE_URL = "http://148.204.142.3:3003/"
+        private const val BASE_URL = "https://4xqms8fr-8000.usw3.devtunnels.ms/"
         fun create(): APIService{
             val retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)
